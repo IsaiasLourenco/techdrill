@@ -1,28 +1,48 @@
-# Exercício HTML + CSS Avançado - Projeto Landing Page com FlexGrid
+# 🏗️ Bate Estaca
 
-Projeto de HTML e CSS avançado para praticar o que aprendi na extensão universitária Dev Full Stack DevEmDobro até o presente momento.
+Projeto desenvolvido para representar a presença digital da empresa **Estaca Max - Estaca Hélice Contínua**, especializada em soluções de fundações profundas.
 
-## Recursos
+---
 
-Este projeto é uma demonstração do que foi aprendido, englobando HTML, CSS e o FlexGrid, principal atributo.
-A preocupação foi usar de maneira correta a estilização, para termos um layout responsivo usando @mediaqueries para termos uma ótima visão tanto desktop quanto mobile, para aparelhos tablets e celulares, baseados em uma Agência de Marketing Digital.
+## 👤 Proprietário
 
-## Tecnologias utilizadas
+**Moacyr Hérbert Cussolim**  
+Fundador e idealizador da Estaca Max
 
-- Construção do site e sistema 
-    - HTML;
-    - CSS;
-    - CSS/FlexGrid.
+---
 
-## Inicialização
+## 📱 Contato
 
-Não há necessidade de nennhum npm ao fazer o git.clone.
+- 📸 Instagram: [@estaca.max](https://www.instagram.com/p/DMvpWd_Shb1/?igsh=azlzbXBjdWx5b3No)  
+- 📧 E-mail: [estacamax.estacahelice@gmail.com](mailto:estacamax.estacahelice@gmail.com)
 
-## Colaboradores
+---
 
-- Exercício de HTML CSS/FlexGrid avançado na extensão universitária Full Stack Developer DevEmDobro https://www.instagram.com/devemdobro/;
-- Levando a sério para me tornar cada dia melhor.<br> 
-<img src="./src/images/logotipo-do-github.png" alt="Github"> https://github.com/IsaiasLourenco<br>
-<img src="./src/images/logotipo-do-linkedin.png" alt="Linkedin"> https://www.linkedin.com/in/isaias-louren%C3%A7o/
+## 💻 Sobre o projeto
 
-<img src="./src/images/cssFlexGrid.gif" alt="Delivering">
+Este site foi criado com foco em apresentar os serviços oferecidos pela Estaca Max, com layout responsivo e moderno, utilizando tecnologias como **HTML5**, **CSS3** e motor **JavaScript** e sempre com boas práticas de desenvolvimento web.
+
+---
+
+## 🚧 Em desenvolvimento
+
+Este repositório está em constante atualização para refletir melhorias visuais, de performance e acessibilidade.
+
+---
+
+## ▶️ Inicialização
+
+Nenhum pacote npm é necessário. Basta fazer o `git clone` e abrir o `index.html`.
+
+---
+
+## 🤝 Colaboradores
+
+Desenvolvido com dedicação por **Isaias Lourenço** – [Vetor256](https://vetor256.com) ❤️  
+📧 E-mail: [isaias@vetor256.com](mailto:isaias@vetor256.com)  
+🔗 GitHub: [IsaiasLourenco](https://github.com/IsaiasLourenco)  
+🔗 LinkedIn: [isaias-lourenço](https://www.linkedin.com/in/isaias-louren%C3%A7o/)
+
+> Levando a sério para me tornar cada dia melhor.
+
+![Entrega](./src/images/cssFlexGrid.gif)
