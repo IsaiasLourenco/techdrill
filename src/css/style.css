@@ -224,11 +224,11 @@ body {
 }
 
 .services .service:nth-child(1) {
-    background-color: lightskyblue;
+    background-color: rgb(172, 198, 214);
 }
 
 .services .service:nth-child(2) {
-    background-color: lightcoral;
+    background-color: rgb(202, 158, 158);
 }
 
 @media(max-width: 430px) {
