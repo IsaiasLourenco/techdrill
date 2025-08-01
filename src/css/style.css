@@ -1,29 +1,29 @@
-html{
+html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
-body{
+body {
     display: grid;
     grid-template-areas: "header header header header"
-                         "hero hero hero hero"
-                         "about about about about"
-                         "services services services services"
-                         "projects projects projects projects"
-                         "footer footer footer footer";
-    grid-template-columns: repeat(4, 1fr);             
-    font-size: 1.6rem;         
+        "hero hero hero hero"
+        "about about about about"
+        "services services services services"
+        "projects projects projects projects"
+        "footer footer footer footer";
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;   
+    font-weight: 400;
 }
 
 /* HEADER */
-.header{
+.header {
     grid-area: header;
     background-color: #fff;
 }
 
-.header .header-container{
+.header .header-container {
     display: flex;
     padding: 20px 40px;
     justify-content: space-between;
@@ -31,21 +31,21 @@ body{
     min-height: 75px;
 }
 
-.header h1{
+.header h1 {
     font-size: 3rem;
     font-weight: 700;
     transition: 0.3s;
 }
 
-.header a:hover h1{
-     color: coral;
+.header a:hover h1 {
+    color: coral;
 }
 
 /* HERO */
-.hero{
+.hero {
     grid-area: hero;
     height: 89vh;
-    background: url(../images/lemons.jpg) center center no-repeat;
+    background: url(../images/Bate-estacas.png) center center no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -53,55 +53,81 @@ body{
     position: relative;
 }
 
-.hero h2{
+.hero h2 {
     font-weight: 500;
     text-transform: uppercase;
     font-size: 4rem;
+    color: #fff;
+    /* <- adiciona esta linha */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.hero .scroll-arrow a{
+.hero .scroll-arrow a {
     position: absolute;
-    bottom: 40px;
+    bottom: 25px;
+    /* subiu um pouco a seta */
     left: 50%;
     transform: translateX(-50%);
-    width: 35px;
-    height: 35px;
+    width: 20px;
+    /* diminuído de 35px */
+    height: 20px;
+    background: url(../images/seta_preta.png) no-repeat center;
+    /* troca o arquivo, se quiser */
+    background-size: contain;
+    animation: downarrow 0.6s infinite alternate ease-in-out;
+    z-index: 2;
+}
+
+.hero:after {
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
     background: url(../images/seta_preta.png) no-repeat center;
     background-size: contain;
     animation: downarrow 0.6s infinite alternate ease-in-out;
-}
-
-
-.hero:after{
-    content: url(../images/seta_preta.png);
-    position: absolute;
-    height: 35px;
-    bottom: 40px;
-    animation: downarrow 0.6s infinite alternate ease-in-out;
+    z-index: 2;
 }
 
 @keyframes downarrow {
-    0% { transform: translateY(0); opacity: 0.4; }
-    100% { transform: translateY(0.5em); opacity: 0.9; }
+    0% {
+        transform: translateY(0);
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: translateY(0.5em);
+        opacity: 0.9;
+    }
 }
 
-@-webkit-keyframes downarrow{
-    0% { -webkit-transform: translateY(0); opacity: 0.4;}
-    100% { -webkit-transform: translateY(0.5em); opacity: 0.9;}
+@-webkit-keyframes downarrow {
+    0% {
+        -webkit-transform: translateY(0);
+        opacity: 0.4;
+    }
+
+    100% {
+        -webkit-transform: translateY(0.5em);
+        opacity: 0.9;
+    }
 }
 
-@media(max-width: 430px){
-    .hero{
+@media(max-width: 430px) {
+    .hero {
         height: 60vh;
     }
 
-    .hero h2{
+    .hero h2 {
         font-size: 2.5rem;
     }
 }
 
 /* ABOUT */
-.about{
+.about {
     grid-area: about;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -110,7 +136,7 @@ body{
     margin: 0 auto;
 }
 
-.about .item{
+.about .item {
     padding: 20%;
     display: flex;
     flex-direction: column;
@@ -118,78 +144,78 @@ body{
     align-content: center;
 }
 
-.about .item h3{
+.about .item h3 {
     font-weight: 700;
     font-size: 4rem;
 }
 
-.about .item p{
+.about .item p {
     font-weight: 400;
     font-size: 1.8rem;
     margin: 30px 0;
 }
 
-.about .image{
+.about .image {
     height: 100%;
     width: 100%;
 }
 
-.about .item .btn-know-more{
+.about .item .btn-know-more {
     font-size: 1.6rem;
     align-self: flex-start;
 }
 
-.about .item .btn-know-more:hover{
+.about .item .btn-know-more:hover {
     font-weight: 700;
-    
+
 }
 
-.about .image.right{
-    background: url(../images/bridge.jpg) center center no-repeat;
+.about .image.right {
+    background: url(../images/Bate-estaca3.png) center center no-repeat;
     background-size: cover;
 }
 
-.about .image.left{
-    background: url(../images/sky.jpg) center center no-repeat;
+.about .image.left {
+    background: url(../images/Bate-estacas2.png) center center no-repeat;
     background-size: cover;
 }
 
-@media(max-width: 430px){
-    .about .item{
+@media(max-width: 430px) {
+    .about .item {
         text-align: center;
 
     }
 
-    .about{
+    .about {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,1fr);
+        grid-template-rows: repeat(4, 1fr);
     }
 }
 
 /* SERVICES */
-.services{
+.services {
     grid-area: services;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.services .service{
+.services .service {
     padding: 70px 20px;
     text-align: center;
 
 }
 
-.services .service img{
+.services .service img {
     width: 250px;
     margin-bottom: 30px;
 }
 
-.services .service h3{
+.services .service h3 {
     font-size: 1.8rem;
     font-weight: 700;
 }
 
-.services .service p{
+.services .service p {
     font-size: 2rem;
     font-weight: 400;
     max-width: 400px;
@@ -197,52 +223,52 @@ body{
     line-height: 25px;
 }
 
-.services .service:nth-child(1){
+.services .service:nth-child(1) {
     background-color: lightskyblue;
 }
 
-.services .service:nth-child(2){
+.services .service:nth-child(2) {
     background-color: lightpink;
 }
 
-@media(max-width: 430px){
-    .services{
+@media(max-width: 430px) {
+    .services {
         grid-template-columns: 1fr;
     }
 }
 
 /* PROJECTS */
-.projects{
+.projects {
     grid-area: projects;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
-.projects img{
+.projects img {
     height: 100%;
     transition: 0.3s;
 }
 
-.projects a:hover img{
+.projects a:hover img {
     opacity: 0.8;
 }
 
-@media(max-width: 768px){
-    .projects{
+@media(max-width: 768px) {
+    .projects {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
     }
 }
 
-@media(max-width: 430px){
-    .projects{
+@media(max-width: 430px) {
+    .projects {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
     }
 }
 
 /* FOOTER    */
-.footer{
+.footer {
     grid-area: footer;
     display: flex;
     background-color: lightgreen;
@@ -251,44 +277,44 @@ body{
     padding: 100px 0;
 }
 
-.footer h4{
+.footer h4 {
     font-weight: 700;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-.footer nav{
+.footer nav {
     margin: 50px 0;
 }
 
-.footer nav ul{
+.footer nav ul {
     display: flex;
     justify-content: center;
     max-width: 320px;
     margin: 0 auto;
 }
 
-.footer nav ul li a{
+.footer nav ul li a {
     font-weight: 500;
     font-size: 2rem;
     margin: 20px;
     transition: 0.3s;
 }
 
-.footer nav ul li a:hover{
+.footer nav ul li a:hover {
     font-weight: 700;
     color: #fff;
 }
 
-.footer .social i{
+.footer .social i {
     font-size: 2rem;
     transition: 0.3s;
 }
 
-.footer .social a{
+.footer .social a {
     margin: 20px;
 }
 
-.footer .social a:hover{
+.footer .social a:hover {
     color: #fff;
 }
