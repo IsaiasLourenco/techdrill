@@ -271,7 +271,7 @@ body {
 .footer {
     grid-area: footer;
     display: flex;
-    background-color: rgb(166, 142, 142);
+    background-color: rgb(219, 197, 197);
     flex-direction: column;
     text-align: center;
     padding: 100px 0;
@@ -324,7 +324,7 @@ body {
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
-    background: #6287a9;
+    background: #afbac5;
     border-radius: 8px;
 }
 
@@ -336,6 +336,7 @@ body {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
+    text-align: left;
 }
 
 .contact-form input,
@@ -347,8 +348,7 @@ body {
 }
 
 .contact-form button {
-    background: red;
-    color: white;
+    background: rgb(209, 177, 177);
     padding: 12px 24px;
     border: none;
     border-radius: 4px;
@@ -356,5 +356,5 @@ body {
 }
 
 .contact-form button:hover {
-    background: #0056b3;
+    background: #89aed7;
 }
