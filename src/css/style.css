@@ -46,7 +46,7 @@ body {
 .hero {
     grid-area: hero;
     height: 89vh;
-    background: url(../images/Eqp1.jpg) center center no-repeat;
+    background: url(../images/Eqp3.jpg) center center no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
