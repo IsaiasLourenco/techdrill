@@ -61,6 +61,16 @@
         <a href="#about" class="scrool-arrow"></a>
     </section>
 
+    <!-- Botão do WhatsApp centralizado antes da seção Sobre Nós -->
+    <section class="whatsapp-top">
+        <div class="whatsapp-container">
+            <a href="https://api.whatsapp.com/send?phone=5519991642519&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20Estacamax."
+                target="_blank" class="whatsapp-link">
+                💬 Solicitar orçamento via WhatsApp
+            </a>
+        </div>
+    </section>
+
     <section class="about" id="about">
 
         <div class="item">
@@ -89,14 +99,31 @@
             </p>
         </div>
 
-        <div class="item">
+        <!-- Bloco de texto com miniaturas logo abaixo -->
+        <div class="item galeria">
             <h3>Galeria</h3>
             <h4>Nossas Fotos</h4>
 
-            <div class="foto-container">
-                <img src="images/icone-foto.png" alt="Ver foto" class="icone" onclick="mostrarFoto()">
-                <img src="images/foto-normal.png" alt="Foto ampliada" class="ampliada">
+            <div class="miniaturas">
+                <img src="src/images/Eqp1.jpg" alt="Miniatura 1" class="icone"
+                    onclick="mostrarFoto('src/images/Eqp1.jpg')">
+                <img src="src/images/Eqp2.jpg" alt="Miniatura 2" class="icone"
+                    onclick="mostrarFoto('src/images/Eqp2.jpg')">
+                <img src="src/images/Eqp3.jpg" alt="Miniatura 3" class="icone"
+                    onclick="mostrarFoto('src/images/Eqp3.jpg')">
+                <img src="src/images/helice1.png" alt="Miniatura 3" class="icone"
+                    onclick="mostrarFoto('src/images/helice1.png')">
+                <img src="src/images/estaca.jpg" alt="Miniatura 3" class="icone"
+                    onclick="mostrarFoto('src/images/estaca.jpg')">
             </div>
+        </div>
+
+        <!-- Imagem ampliada ao lado direito -->
+        <div class="image right">
+            <div class="ampliada-container">
+                <img src="src/images/Eqp1.jpg" alt="Foto ampliada" class="ampliada" id="fotoGrande">
+            </div>
+        </div>
 
     </section>
 
@@ -173,6 +200,7 @@
 
 
     </footer>
+    <script src="src/js/galeria.js"></script>
 </body>
 
 </html>
