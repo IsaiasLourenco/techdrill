@@ -45,8 +45,8 @@ body {
 .hero {
     grid-area: hero;
     height: 89vh;
-    background: url(../images/Bate-estacas.png) center center no-repeat;
-    background-size: cover;
+    background: url(../images/helice1.png) center center no-repeat;
+    background-size: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,8 +171,8 @@ body {
 }
 
 .about .image.right {
-    background: url(../images/Bate-estaca3.png) center center no-repeat;
-    background-size: cover;
+    background: url(../images/sobre1.jpg) center center no-repeat;
+    background-size: 60%;
 }
 
 .about .image.left {
