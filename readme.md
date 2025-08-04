@@ -1,19 +1,19 @@
-# 🏗️ Bate Estaca
+# 🏗️ Tech Drill
 
-Projeto desenvolvido para representar a presença digital da empresa **Estaca Max - Estaca Hélice Contínua**, especializada em soluções de fundações profundas.
+Projeto desenvolvido para representar a presença digital da empresa **Estaca Tech Drill - Perfurações Profundas**, especializada em soluções de fundações.
 
 ---
 
 ## 👤 Proprietário
 
 **Moacyr Hérbert Cussolim**  
-Fundador e idealizador da Estaca Max
+Fundador e idealizador da Tech Drill
 
 ---
 
 ## 📱 Contato
 
-- 📸 Instagram: [@estaca.max](https://www.instagram.com/p/DMvpWd_Shb1/?igsh=azlzbXBjdWx5b3No)  
+- 📸 Instagram: [@estaca.max](https://www.instagram.com/estacamax_estaca_helice/)  
 - 📧 E-mail: [estacamax.estacahelice@gmail.com](mailto:estacamax.estacahelice@gmail.com)
 
 ---
