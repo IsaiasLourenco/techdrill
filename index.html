@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Drill</title>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/ico.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/icone.ico">
 
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/variables.css">
@@ -28,10 +28,10 @@
 
         <div class="header-container">
 
-            <a href="index.html">
-                <img src="src/images/logo.png" alt="Estacamax Estaca Hélice" style="height: 160px;">
+            <a href="index.html" style="display: block; text-align: center;">
+                <img src="src/images/logo.png" alt="Estacamax Estaca Hélice"
+                    style="height: 180px; margin-bottom: -30px;">
             </a>
-
             <nav>
                 <input type="checkbox" id="menu-hamburguer">
 
@@ -42,11 +42,11 @@
                 </label>
 
                 <ul>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#equip">Equipamentos</a></li>
-                    <li><a href="#gal">Galeria</a></li>
-                    <li><a href="#reg">Regiões Atendidas</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a class="letra" href="#about">Sobre</a></li>
+                    <li><a class="letra" href="#equip">Equipamentos</a></li>
+                    <li><a class="letra" href="#gal">Galeria</a></li>
+                    <li><a class="letra" href="#reg">Regiões Atendidas</a></li>
+                    <li><a class="letra" href="#contact">Contato</a></li>
                 </ul>
 
             </nav>
@@ -67,7 +67,7 @@
         <div class="whatsapp-container">
             <a href="https://api.whatsapp.com/send?phone=5519991642519&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20Estacamax."
                 target="_blank" class="whatsapp-link">
-                💬 Clique aqui → para solicitar orçamento via WhatsApp (19)99164-2519
+                Clique aqui → para solicitar orçamento via WhatsApp<span class="break-mobile"> (19)99164-2519
             </a>
         </div>
     </section>
@@ -87,16 +87,19 @@
             </p>
         </div>
 
-        <div class="image right"></div>
+        <div class="image-right"></div>
 
-        <div class="image left"></div>
+        <a href="https://www.instagram.com/p/DMvpWd_Shb1/?igsh=azlzbXBjdWx5b3No" target="_blank"
+            title="Ver vídeo no instagram">
+            <div class="image left"></div>
+        </a>
 
         <div class="item" id="equip">
             <h3>Nossos Equipamentos</h3>
             <p>
                 Possuímos equipamentos desde compactos com torre de 12m para perfurações de diâmetro de 25cm e 32cm por
                 12m de profundidade até equipamentos maiores e mais robustos para diâmetros de 40cm e 50cm por 16m de
-                profundidade. Caso necessite de diâmetro e profundiadade maiores, podemos atender sob consulta.
+                profundidade. Caso necessite de diâmetro e profundidade maiores, podemos atender sob consulta.
             </p>
         </div>
 
@@ -106,16 +109,46 @@
             <h4>Nossas Fotos</h4>
 
             <div class="miniaturas">
-                <img src="src/images/Eqp1.jpg" alt="Miniatura 1" class="icone"
+                <img src="src/images/tech01.jpg" alt="Miniatura 1" class="icone"
+                    onclick="mostrarFoto('src/images/tech01.jpg')">
+                <img src="src/images/tech02.jpg" alt="Miniatura 2" class="icone"
+                    onclick="mostrarFoto('src/images/tech02.jpg')">
+                <img src="src/images/tech03.jpg" alt="Miniatura 3" class="icone"
+                    onclick="mostrarFoto('src/images/tech03.jpg')">
+                <img src="src/images/tech04.jpg" alt="Miniatura 4" class="icone"
+                    onclick="mostrarFoto('src/images/tech04.jpg')">
+                <img src="src/images/sobre1.jpg" alt="Miniatura 5" class="icone"
+                    onclick="mostrarFoto('src/images/sobre1.jpg')">
+                <img src="src/images/logo.png" alt="Miniatura 6" class="icone"
+                    onclick="mostrarFoto('src/images/logo.png')">
+                <img src="src/images/img1.png" alt="Miniatura 7" class="icone"
+                    onclick="mostrarFoto('src/images/img1.png')">
+                <img src="src/images/img2.jpg" alt="Miniatura 8" class="icone"
+                    onclick="mostrarFoto('src/images/img2.jpg')">
+                <img src="src/images/img3.jpg" alt="Miniatura 9" class="icone"
+                    onclick="mostrarFoto('src/images/img3.jpg')">
+                <img src="src/images/img4.jpg" alt="Miniatura 10" class="icone"
+                    onclick="mostrarFoto('src/images/img4.jpg')">
+                <img src="src/images/img5.jpg" alt="Miniatura 11" class="icone"
+                    onclick="mostrarFoto('src/images/img5.jpg')">
+                <img src="src/images/img6.jpg" alt="Miniatura 12" class="icone"
+                    onclick="mostrarFoto('src/images/img6.jpg')">
+                <img src="src/images/img7.jpg" alt="Miniatura 13" class="icone"
+                    onclick="mostrarFoto('src/images/img7.jpg')">
+                <img src="src/images/img8.jpg" alt="Miniatura 14" class="icone"
+                    onclick="mostrarFoto('src/images/img8.jpg')">
+                <img src="src/images/img9.jpg" alt="Miniatura 15" class="icone"
+                    onclick="mostrarFoto('src/images/img9.jpg')">
+                <img src="src/images/img10.jpg" alt="Miniatura 16" class="icone"
+                    onclick="mostrarFoto('src/images/img10.jpg')">
+                <img src="src/images/Eqp1.jpg" alt="Miniatura 17" class="icone"
                     onclick="mostrarFoto('src/images/Eqp1.jpg')">
-                <img src="src/images/Eqp2.jpg" alt="Miniatura 2" class="icone"
+                <img src="src/images/Eqp2.jpg" alt="Miniatura 18" class="icone"
                     onclick="mostrarFoto('src/images/Eqp2.jpg')">
-                <img src="src/images/Eqp3.jpg" alt="Miniatura 3" class="icone"
+                <img src="src/images/Eqp3.jpg" alt="Miniatura 19" class="icone"
                     onclick="mostrarFoto('src/images/Eqp3.jpg')">
-                <img src="src/images/helice1.png" alt="Miniatura 4" class="icone"
-                    onclick="mostrarFoto('src/images/helice1.png')">
-                <img src="src/images/estaca.jpg" alt="Miniatura 5" class="icone"
-                    onclick="mostrarFoto('src/images/estaca.jpg')">
+                <img src="src/images/Bate-estacas1.png" alt="Miniatura 20" class="icone"
+                    onclick="mostrarFoto('src/images/Bate-estacas1.png')">
             </div>
         </div>
 
@@ -131,11 +164,9 @@
     <section class="services" id="reg">
 
         <div class="service">
-            <a href="https://www.instagram.com/p/DMvpWd_Shb1/?igsh=azlzbXBjdWx5b3No" target="_blank"><img
-                    src="./src/images/parceria1.jpg" alt="Fundação" title="Ver vídeo no Instagram">
-            </a>
+            <img src="./src/images/concreto.jpg" alt="Fundação" style="width: 100%; max-width: 600px;">
             <div class="service-info">
-                <h3>Tipos de Fundações</h3>
+                <h3>Bombas de Concreto</h3>
                 <p>
                     A fundação é o alicerce de qualquer construção segura e duradoura. Na Estaca Max, aplicamos técnicas
                     modernas de bate estaca que garantem resistência, estabilidade e alto desempenho em terrenos dos
@@ -147,7 +178,7 @@
         </div>
 
         <div class="service">
-            <img src="./src/images/mapa.jpg" alt="Mapa">
+            <img src="./src/images/mapa.jpg" alt="Mapa" style="width: 100%; max-width: 400px;">
             <div class="service-info">
                 <h3>Regiões Atendidas</h3>
                 <p>
@@ -160,18 +191,18 @@
     </section>
 
     <footer class="footer" id="contact">
-        <h4>Estacamax - Fundações Especiais</h4>
+        <h4 style="color: blue;">TechDrill</h4>
         <h5>Entre em contato</h5><br>
         <h5>
             <a href="mailto:techdrill.perfuratriz@gmail.com?subject=Orçamento%20via%20site"
                 style="color: crimson; font-weight: bold; text-decoration: none; font-size: larger;">
-                📧 Clique aqui para nos mandar um email → techdrill.perfuratriz@gmail.com
+                Clique aqui para nos mandar um emaill para → techdrill.perfuratriz@gmail.com
             </a>
         </h5><br><br>
         <p>
             <a href="https://api.whatsapp.com/send?phone=5519991642519&text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20com%20a%20Estacamax."
                 target="_blank" style="color: green; font-weight: bold; text-decoration: none;">
-                💬 Clique aqui → para solicitar orçamento via WhatsApp (19)99164-2519
+                Clique aqui → para solicitar orçamento via WhatsApp (19)99164-2519
             </a>
         </p>
 

@@ -13,8 +13,8 @@ Fundador e idealizador da Tech Drill
 
 ## 📱 Contato
 
-- 📸 Instagram: [@estaca.max](https://www.instagram.com/estacamax_estaca_helice/)  
-- 📧 E-mail: [estacamax.estacahelice@gmail.com](mailto:estacamax.estacahelice@gmail.com)
+- 📸 Instagram: [@tech_drill](https://www.instagram.com/techdrilloficial/)  
+- 📧 E-mail: [techdrill.perfuratriz@gmail.com](mailto:techdrill.perfuratriz@gmail.com)
 
 ---
 

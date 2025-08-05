@@ -42,11 +42,15 @@ body {
     color: coral;
 }
 
+.header .header-container .letra {
+    font-size: 1.8rem;
+}
+
 /* HERO */
 .hero {
     grid-area: hero;
     height: 89vh;
-    background: url(../images/Eqp3.jpg) center center no-repeat;
+    background: url(../images/tech01.jpg) center center no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -57,11 +61,19 @@ body {
 .hero h2 {
     font-weight: 500;
     text-transform: uppercase;
-    font-size: 3.5rem;
+    font-size: 6rem;
     color: #fff;
     /* <- adiciona esta linha */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     transform: translateY(-80px);
+}
+
+@media (max-width: 768px) {
+    .hero h2 {
+        /* Mais pra cima em telas pequenas */
+        transform: translateY(-200px);
+        font-size: 8rem;
+    }
 }
 
 .hero .scroll-arrow a {
@@ -172,13 +184,13 @@ body {
 
 }
 
-.about .image.right {
+.about .image-right {
     background: url(../images/sobre1.jpg) center center no-repeat;
     background-size: 90%;
 }
 
 .about .image.left {
-    background: url(../images/Eqp1.jpg) center center no-repeat;
+    background: url(../images/tech02.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -340,14 +352,17 @@ body {
 }
 
 .miniaturas {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 80px);
     gap: 10px;
+    justify-content: center;
     margin-top: 10px;
 }
 
 .miniaturas img {
     width: 80px;
-    height: auto;
+    height: 80px;
+    object-fit: cover;
     cursor: pointer;
     border-radius: 4px;
     transition: transform 0.2s ease;
@@ -357,16 +372,22 @@ body {
     transform: scale(1.05);
 }
 
-.image.right {
-    flex: 1;
+.ampliada-container {
     display: flex;
-    align-items: flex-start;
     justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    /* Garante altura mínima pra exibir bem */
+    height: 100%;
+    /* Pode ajustar dependendo do contexto */
 }
 
 .ampliada-container img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 600px;
+    max-height: 400px;
     height: auto;
+    object-fit: contain;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -397,4 +418,39 @@ body {
 .whatsapp-link:hover {
     background-color: green;
     color: white;
+}
+
+.break-mobile {
+    display: inline;
+}
+
+@media (max-width: 430px) {
+    .whatsapp-link {
+        font-size: 1rem;
+        padding: 8px 12px;
+        display: block;
+        margin: 10px auto;
+        max-width: 90%;
+        white-space: normal;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .break-mobile {
+        display: block;
+        margin-top: 6px;
+    }
+
+    .miniaturas {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+    }
+
+    .miniaturas img {
+        width: 100%;
+        /* usa todo o espaço da célula */
+        height: auto;
+        aspect-ratio: 1/1;
+        /* mantém quadrado */
+    }
 }
